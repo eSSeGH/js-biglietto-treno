@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+img,
+figure {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.flex {
+    display: flex;
+}
+
+body {
+    height: 100vh;
+}
+
+/* HEADER */
+
+/* funziona fino a 490px */
+
+header {
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    box-shadow: 0 0 15px inset rgb(19, 19, 19);
+}
+
+figure {
+    max-height: 60%;
+    max-width: 30%;
+    margin: 0 20px;
+}
+
+img {
+    max-height: 90px;
+    min-height: 50px;
+}
+
+header ul {
+    height: 150px;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    background-color: cornflowerblue;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+
+/* MAIN */
+
+main {
+    background-image: ;
+    background-color: rgba(0, 0, 0, 0.96);
+    height: calc(100vh - 150px)
+}
