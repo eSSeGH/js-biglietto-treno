@@ -71,7 +71,6 @@ main {
     background-image: url(../img/train-stations-graz_08.webp);
     background-position: center;
     background-size: cover;
-    opacity: 50%;
     height: calc(100vh - 150px);
     filter: sepia(60%);
     flex-direction: column;
