@@ -2,7 +2,6 @@
 // e inserirlo nell'html
 
 let name = prompt("Inserire nome e cognome separati da uno spazio")
-console.log(name)
 
 const nameValue = document.getElementById('name')
 nameValue.innerHTML = name
@@ -23,7 +22,6 @@ const età = parseInt(prompt("Qual'è la sua età?"))
 // e inserirlo nell'html
 
 let basicPrice = (km * 0.21)
-console.log(basicPrice)
 
 const basicPriceValue = document.getElementById('basic-price')
 basicPriceValue.innerHTML = basicPrice + "€"
@@ -33,22 +31,20 @@ basicPriceValue.innerHTML = basicPrice + "€"
 let price = 0
 
 if (età < 18) {
-   price = (km * 0.21 * 0.8)
+   price = (basicPrice * 0.8)
 
 } else if (età > 65) {
-    price = (km * 0.21 * 0.6)
+    price = (basicPrice * 0.6)
 
 } else {
-    price = (km * 0.21)
+    price = basicPrice
 
 }
-console.log(price)
 
 // output con massimo di 2 decimali
 // e inserirlo nell'html
 
 price = price.toFixed(2)
-console.log(price)
 
 const priceValue = document.getElementById('price')
 priceValue.innerHTML = price + "€"
@@ -56,7 +52,6 @@ priceValue.innerHTML = price + "€"
 // calcolare lo sconto e inserirlo nell'html
 
 const discount = -(price - basicPrice)
-console.log(discount)
 
 const discountValue = document.getElementById('discount')
 discountValue.innerHTML = discount + "€"
