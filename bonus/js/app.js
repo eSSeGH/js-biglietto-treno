@@ -51,7 +51,7 @@ priceValue.innerHTML = price + "€"
 
 // calcolare lo sconto e inserirlo nell'html
 
-const discount = -(price - basicPrice)
+const discount = - (price - basicPrice)
 
 const discountValue = document.getElementById('discount')
 discountValue.innerHTML = discount + "€"
